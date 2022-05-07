@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --dark-blue: hsl(235, 30%, 7%);
+  --light-blue: hsl(231, 77%, 90%);
+  --white: hsl(0, 0%, 100%);
+  --regular-font: "Barlow", sans-serif;
+  --header-font: "Bellefair", serif;
+  --header-font-two: "Barlow Condensed", sans-serif;
+}
+body,
+html {
+  background: url(./images/background-crew-desktop.jpg) 100% 100% no-repeat
+    fixed;
+  background-size: cover;
+}
+main {
+  margin-top: 76px;
+}
+main {
+  text-transform: uppercase;
+}
+main h5 span {
+  opacity: 0.5;
+  margin-right: 28px;
+}
+main h5:not(.details h5) {
+  margin: 0px 0px 50px 167px;
+}
+.details {
+  margin-left: 165px;
+  margin-top: 120px;
+}
+.details h4 {
+  opacity: 0.5;
+}
+.details h3 {
+  margin-top: 15px;
+}
+.details p {
+  text-transform: none;
+  width: 450px;
+  margin-top: 27px;
+  color: var(--light-blue);
+}
+main img {
+  margin-left: 750px;
+  float: right;
+  display: block;
+  position: absolute;
+}
+main > div {
+  animation: fade 1s linear;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.mobile-image,
+.mobile-radio {
+  display: none;
+}
+.radio:not(.mobile-radio) {
+  display: flex;
+  margin-top: 120px;
+}
+.radio > * {
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 50%;
+  margin-right: 25px;
+  transition: all 0.3s;
+}
+.current-member {
+  background: var(--white);
+}
+.radio > *:not(.current-member):hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 1024px) {
+  h4 {
+    font-size: 24px;
+  }
+  body {
+    background: url(./images/background-crew-tablet.jpg) 100% 100% no-repeat;
+    background-size: cover;
+  }
+  main h5:not(.details h5) {
+    margin-left: 40px;
+    font-size: 20px;
+    letter-spacing: 3.375px;
+  }
+  main h5 span {
+    margin-right: 19px;
+  }
+  main img {
+    position: absolute;
+  }
+  .details {
+    text-align: center;
+    margin: 60px auto;
+  }
+  .details p {
+    width: 520px;
+    margin: 16px auto;
+  }
+  .radio {
+    margin-top: 40px;
+    justify-content: center;
+  }
+  main img {
+    margin: 0px auto;
+    float: none;
+    display: block;
+    position: static;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 500px) {
+  body {
+    background: url(./images/background-crew-mobile.jpg) 100% 100% no-repeat;
+    background-size: cover;
+  }
+  main {
+    margin-top: 0px;
+  }
+  main h5:not(.details h5) {
+    margin: 0;
+    text-align: center;
+  }
+  .mobile-image {
+    display: block;
+    width: 327px;
+    padding: 0px 50px;
+    border-bottom: 2px solid #383b4b;
+    margin: 0px auto;
+    margin-top: 32px;
+  }
+  .mobile-radio > * {
+    width: 10px;
+    height: 10px;
+    margin-right: 16px;
+  }
+  main .details h3 {
+    font-size: 24px;
+  }
+  main .details h4 {
+    font-size: 16px;
+  }
+  main .details p {
+    width: 327px;
+    line-height: 25px;
+  }
+  main img:not(.mobile-image) {
+    display: none;
+  }
+  .details .radio {
+    display: none;
+  }
+  .mobile-radio {
+    display: flex;
+  }
+}

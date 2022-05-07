@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --dark-blue: hsl(235, 30%, 7%);
+  --light-blue: hsl(231, 77%, 90%);
+  --white: hsl(0, 0%, 100%);
+  --regular-font: "Barlow", sans-serif;
+  --header-font: "Bellefair", serif;
+  --header-font-two: "Barlow Condensed", sans-serif;
+}
+body {
+  background: url(./images/background-technology-desktop.jpg) 100% 100%
+    no-repeat;
+  background-size: cover;
+}
+main {
+  margin-top: 76px;
+}
+section {
+  text-transform: uppercase;
+  margin-left: 161px;
+  margin-bottom: 100px;
+}
+main h5 span {
+  opacity: 0.5;
+  margin-right: 28px;
+}
+main h5 {
+  margin: 0px 0px 50px 167px;
+}
+.details {
+  margin-left: 167px;
+  margin-top: 137px;
+}
+button {
+  border-radius: 50%;
+  background: local;
+  width: 80px;
+  transition: all 0.3s;
+}
+button {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 32px;
+}
+section ul {
+  float: left;
+}
+.current-tech {
+  border-color: var(--white);
+}
+button a h4 {
+  line-height: 80px;
+  border-radius: 50%;
+}
+button:hover {
+  border-color: var(--white);
+}
+.current-tech a h4 {
+  background: var(--white);
+  color: black;
+}
+.details .sub-head {
+  font-family: var(--header-font-two);
+  letter-spacing: 2.7px;
+  color: var(--light-blue);
+}
+p:not(.sub-head) {
+  text-transform: none;
+  color: var(--light-blue);
+  width: 444px;
+  margin-top: 17px;
+}
+section h3 {
+  margin-top: 11px;
+}
+section > *:not(ul, img) {
+  margin-left: 160px;
+}
+section img:not(.landscape) {
+  margin-left: 500px;
+  float: right;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 272px;
+}
+.landscape {
+  display: none;
+}
+.details {
+  width: 480px;
+}
+
+@media screen and (max-width: 1024px) {
+  h4 {
+    font-size: 24px;
+  }
+  body {
+    background: url(./images/background-technology-tablet.jpg) 100% 100%
+      no-repeat;
+    background-size: cover;
+  }
+  main h5:not(.details h5) {
+    margin-left: 40px;
+    font-size: 20px;
+    letter-spacing: 3.375px;
+  }
+  main h5 span {
+    margin-right: 19px;
+  }
+  .landscape {
+    display: block;
+    width: 100%;
+  }
+  section {
+    margin: 0px auto;
+    text-align: center;
+  }
+  section ul,
+  section img {
+    float: none;
+  }
+  section .details img {
+    display: none;
+  }
+  section ul {
+    display: flex;
+    justify-content: center;
+  }
+  section ul {
+    margin-top: 56px;
+    margin-bottom: 20px;
+  }
+  button {
+    margin-right: 42px;
+  }
+  .details {
+    margin: 0px auto;
+    width: 500px;
+  }
+  .details p:not(.sub-head) {
+    margin: 16px auto;
+    width: 450px;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 500px) {
+  body {
+    background: url(./images/background-technology-mobile.jpg) 100% 100%
+      no-repeat;
+    background-size: cover;
+  }
+  main {
+    margin-top: 0px;
+  }
+  main h5:not(.details h5) {
+    margin: 0;
+    text-align: center;
+  }
+  main img {
+    margin: 32px 0;
+  }
+  button {
+    width: 40px;
+    margin-right: 16px;
+  }
+  button a h4 {
+    font-size: 16px;
+    line-height: 40px;
+    border-radius: 50%;
+  }
+  .sub-head {
+    font-size: 14px;
+  }
+  .details {
+    width: 327px;
+  }
+  .details h3 {
+    font-size: 24px;
+  }
+  .details p:not(.sub-head) {
+    width: 315px;
+  }
+}

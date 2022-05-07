@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --dark-blue: hsl(235, 30%, 7%);
+  --light-blue: hsl(231, 77%, 90%);
+  --white: hsl(0, 0%, 100%);
+  --regular-font: "Barlow", sans-serif;
+  --header-font: "Bellefair", serif;
+  --header-font-two: "Barlow Condensed", sans-serif;
+}
+body {
+  background: url(./images/background-home-desktop.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+main {
+  display: block;
+  margin: 0px auto;
+  margin-top: 200px;
+  width: 1120px;
+}
+main section {
+  float: left;
+  width: 450px;
+}
+main h5 {
+  color: var(--light-blue);
+}
+main h1 {
+  line-height: 170px;
+  margin-top: 30px;
+}
+main p {
+  color: var(--light-blue);
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+button {
+  top: 100%;
+  margin-top: 120px;
+  margin-left: 386px;
+  width: 275px;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+  outline: 0px solid rgba(255, 255, 255, 0.1);
+}
+button:hover {
+  outline-width: 88px;
+}
+button a h4 {
+  border-radius: 50%;
+  color: black;
+  padding: 6px;
+  font-weight: 400;
+  line-height: 275px;
+}
+footer {
+  margin-top: 90px;
+  background: hsl(209, 67%, 17%);
+  height: 80px;
+  width: 100%;
+  position: absolute;
+}
+.attribution a {
+  color: hsl(239, 100%, 85%);
+}
+.attribution {
+  text-align: center;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background: url(./images/background-home-tablet.jpg) 100% 100% no-repeat;
+    background-size: cover;
+  }
+  main {
+    margin-top: 106px;
+    text-align: center;
+    width: 100%;
+  }
+  main section {
+    margin: 0px auto;
+    float: none;
+  }
+  button {
+    margin: 0px auto;
+    margin-top: 156px;
+    margin-bottom: 90px;
+    float: none;
+  }
+  footer {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 500px) {
+  body {
+    background: url(./images/background-home-mobile.jpg) 100% 100% no-repeat;
+    background-size: cover;
+  }
+  header img {
+    margin: 24px;
+  }
+  main h1 {
+    font-size: 80px;
+    margin: 16px auto;
+    line-height: 100px;
+  }
+  main {
+    margin-top: 0px;
+  }
+  main section {
+    margin: 0px auto;
+    width: 327px;
+    margin-top: 48px;
+  }
+  section p {
+    line-height: 25px;
+    width: 327px;
+    margin: 0px auto;
+  }
+}

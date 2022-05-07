@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./technology.css" />
+  </head>
+  <body>
+    <header>
+      <img id="menu" src="../images/icon-hamburger.svg" alt="" />
+      <img src="../images/logo.svg" alt="" />
+      <div class="line"></div>
+      <nav>
+        <img id="close" src="../images/icon-close.svg" alt="" />
+        <ul>
+          <li>
+            <a href="../index.html"><span>00</span> home</a>
+          </li>
+          <li>
+            <a href="../destination/destination.html"
+              ><span>01</span> destination</a
+            >
+          </li>
+          <li>
+            <a href="../crew/crew.html"><span>02</span> crew</a>
+          </li>
+          <li class="active-page">
+            <a href="./technology.html"><span>03</span> technology</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h5><span>03</span>space launch 101</h5>
+
+      <section class="vehicle">
+        <img
+          class="landscape"
+          src="./images/image-launch-vehicle-landscape.jpg"
+          alt=""
+        />
+        <ul>
+          <li>
+            <button class="current-tech">
+              <a href="" class="tech vehicle-link"><h4>1</h4></a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="" class="tech port-link"><h4>2</h4></a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="" class="tech capsule-link"><h4>3</h4></a>
+            </button>
+          </li>
+        </ul>
+        <div class="details">
+          <p class="sub-head">the terminology ...</p>
+          <h3>launch vehicle</h3>
+          <p>
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle
+            used to carry a payload from Earth's surface to space, usually to
+            Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful
+            in operation. Standing 150 metres tall, it's quite an awe-inspiring
+            sight on the launch pad!
+          </p>
+          <img src="./images/image-launch-vehicle-portrait.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="port" style="display: none">
+        <img
+          class="landscape"
+          src="./images/image-spaceport-landscape.jpg"
+          alt=""
+        />
+        <ul>
+          <li>
+            <button>
+              <a href="" class="tech vehicle-link"><h4>1</h4></a>
+            </button>
+          </li>
+          <li>
+            <button class="current-tech">
+              <a href="" class="tech port-link"><h4>2</h4></a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="" class="tech capsule-link"><h4>3</h4></a>
+            </button>
+          </li>
+        </ul>
+        <div class="details">
+          <p class="sub-head">the terminology ...</p>
+          <h3>spaceport</h3>
+          <p>
+            A spaceport or cosmodrome is a site for launching (or receiving)
+            spacecraft, by analogy to the seaport for ships or airport for
+            aircraft. Based in the famous Cape Canaveral, our spaceport is
+            ideally situated to take advantage of the Earth’s rotation for
+            launch.
+          </p>
+          <img src="./images/image-spaceport-portrait.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="capsule" style="display: none">
+        <img
+          class="landscape"
+          src="./images/image-space-capsule-landscape.jpg"
+          alt=""
+        />
+        <ul>
+          <li>
+            <button>
+              <a href="" class="tech vehicle-link"><h4>1</h4></a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="" class="tech port-link"><h4>2</h4></a>
+            </button>
+          </li>
+          <li>
+            <button class="current-tech">
+              <a href="" class="tech capsule-link"><h4>3</h4></a>
+            </button>
+          </li>
+        </ul>
+        <div class="details">
+          <p class="sub-head">the terminology ...</p>
+          <h3>space capsule</h3>
+          <p>
+            A space capsule is an often-crewed spacecraft that uses a blunt-body
+            reentry capsule to reenter the Earth's atmosphere without wings. Our
+            capsule is where you'll spend your time during the flight. It
+            includes a space gym, cinema, and plenty of other activities to keep
+            you entertained.
+          </p>
+          <img src="./images/image-space-capsule-portrait.jpg" alt="" />
+        </div>
+      </section>
+    </main>
+    <script src="../script.js"></script>
+  </body>
+</html>
