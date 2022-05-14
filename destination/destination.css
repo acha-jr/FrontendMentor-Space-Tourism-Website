@@ -27,17 +27,22 @@ main h5:not(.details h5) {
 }
 main img {
   margin: 45px 0px 0px 230px;
-  animation: zoom 1s linear;
+  animation: rotate 3s 1s infinite linear, zoom 1s linear;
 }
 @keyframes zoom {
   0% {
     transform: scale(0);
   }
-  50% {
-    transform: scale(0.5);
-  }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
   }
 }
 main ul {
