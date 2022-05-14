@@ -172,6 +172,7 @@ nav ul li:hover:not(.active-page) {
   }
   nav {
     z-index: 1;
+    overflow-x: hidden;
     top: 0px;
     right: 0;
     position: fixed;
