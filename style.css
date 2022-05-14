@@ -182,6 +182,7 @@ nav ul li:hover:not(.active-page) {
     transition: all 0.5s;
   }
   nav ul {
+    overflow-x: hidden;
     margin-left: 32px;
     margin-top: 118px;
   }
