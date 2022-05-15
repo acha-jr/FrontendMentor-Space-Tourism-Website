@@ -27,7 +27,7 @@ main h5:not(.details h5) {
 }
 main img {
   margin: 45px 0px 0px 230px;
-  animation: rotate 20s 1s infinite linear, zoom 1s linear;
+  animation: rotate 30s 1s infinite linear, zoom 1s linear;
 }
 @keyframes zoom {
   0% {
